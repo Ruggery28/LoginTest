@@ -4,6 +4,8 @@
  */
 package tasklist;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Ruggery
@@ -17,6 +19,7 @@ public class User {
     the parameters Get and Set.
      */
     private String email, password;
+    private ArrayList<Task> Tasks; 
 
     /*Method Get, the user will enter a value in the main[TaskList]
     and it will be stored here in this.email [references private String email] 
@@ -32,6 +35,10 @@ public class User {
     The setter method allows controlled modification of the value of a private 
     field and can include validation logic.
      */
+    
+    /*All users need their onw Task, that's why I created Arry to store all task
+    from each user*/
+    
     public void setEmail(String email) {
         this.email = email;
     }
@@ -48,4 +55,14 @@ public class User {
         return password;
     }
 
+    public ArrayList<Task> getTasks() {
+        return Tasks;
+    }
+
+    public void setTasks(ArrayList<Task> Tasks) {
+        this.Tasks = Tasks;
+    }
+
+
+    
 }
