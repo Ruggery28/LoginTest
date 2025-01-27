@@ -4,6 +4,8 @@
  */
 package tasklist;
 
+import model.Task;
+import model.User;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,7 +13,7 @@ import java.util.Scanner;
  *
  * @author Ruggery
  */
-public class TaskList2 {
+public class TaskListArray {
 
     public static Scanner scanner = new Scanner(System.in);
     public static User userLogged = null;

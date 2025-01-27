@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tasklist;
+package model;
 
 import java.util.ArrayList;
 
@@ -19,6 +19,7 @@ public class User {
     the parameters Get and Set.
      */
     private String email, password;
+    private int id;
     private ArrayList<Task> Tasks; 
 
     /*Method Get, the user will enter a value in the main[TaskList]
@@ -38,6 +39,14 @@ public class User {
     
     /*All users need their onw Task, that's why I created Arry to store all task
     from each user*/
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
     public void setEmail(String email) {
         this.email = email;
